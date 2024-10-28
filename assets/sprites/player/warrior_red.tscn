@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgv8egfylxdr7"]
+
+[ext_resource type="Texture2D" uid="uid://dl06updgldkmo" path="res://Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Red/Warrior_Red.png" id="1_cgacd"]
+
+[node name="WarriorRed" type="Sprite2D"]
+position = Vector2(3413, 7521)
+texture = ExtResource("1_cgacd")

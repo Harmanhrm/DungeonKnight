@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://6n6m4vmp7qdd"]
+
+[ext_resource type="Texture2D" uid="uid://dhii43y1wqkk8" path="res://Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Elevation.png" id="1_mjebk"]
+
+[node name="TilemapElevation" type="Sprite2D"]
+position = Vector2(405, 341)
+texture = ExtResource("1_mjebk")

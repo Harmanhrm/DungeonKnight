@@ -1,0 +1,121 @@
+[gd_scene load_steps=11 format=4 uid="uid://50yxlgv6uj7n"]
+
+[ext_resource type="Texture2D" uid="uid://c65nkxtwonfh5" path="res://2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png" id="2_fpawo"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_31jpp"]
+texture = ExtResource("2_fpawo")
+1:1/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+4:2/0 = 0
+4:1/0 = 0
+3:1/0 = 0
+2:1/0 = 0
+1:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_we0t0"]
+texture = ExtResource("2_fpawo")
+0:0/size_in_atlas = Vector2i(1, 5)
+0:0/0 = 0
+1:4/size_in_atlas = Vector2i(4, 1)
+1:4/0 = 0
+5:0/size_in_atlas = Vector2i(1, 5)
+5:0/0 = 0
+1:0/size_in_atlas = Vector2i(4, 1)
+1:0/0 = 0
+0:5/size_in_atlas = Vector2i(4, 1)
+0:5/0 = 0
+4:5/size_in_atlas = Vector2i(2, 1)
+4:5/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o0jyr"]
+texture = ExtResource("2_fpawo")
+6:3/size_in_atlas = Vector2i(2, 1)
+6:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+6:4/size_in_atlas = Vector2i(1, 2)
+6:4/0 = 0
+6:6/size_in_atlas = Vector2i(2, 1)
+6:6/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_0ixxm"]
+sources/0 = SubResource("TileSetAtlasSource_31jpp")
+sources/1 = SubResource("TileSetAtlasSource_we0t0")
+sources/2 = SubResource("TileSetAtlasSource_o0jyr")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ssmey"]
+size = Vector2(305, 42)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ehiwp"]
+size = Vector2(34, 305)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u7vh0"]
+size = Vector2(181, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4yqer"]
+size = Vector2(66, 77)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_plxa0"]
+size = Vector2(24, 15.5)
+
+[node name="Room" type="Node2D"]
+position = Vector2(164, -10)
+scale = Vector2(3.77491, 3.33269)
+
+[node name="Layer0" type="TileMapLayer" parent="."]
+use_parent_material = true
+tile_map_data = PackedByteArray("AAD//wAAAAADAAIAAAD//wEAAAACAAMAAAAAAAAAAAACAAMAAAAAAAEAAAACAAMAAAABAAAAAAACAAMAAAABAAEAAAADAAIAAAACAAAAAAADAAIAAAACAAEAAAADAAIAAAD/////AAADAAIAAAAAAP//AAACAAMAAAABAP//AAADAAIAAAACAP//AAACAAMAAAADAP//AAACAAMAAAADAAAAAAADAAIAAAAEAP//AAADAAIAAAAEAAAAAAACAAMAAAAFAP//AAADAAIAAAAFAAAAAAADAAIAAAACAAIAAAADAAIAAAADAAEAAAADAAIAAAADAAIAAAADAAIAAAAEAAEAAAACAAMAAAAEAAIAAAADAAIAAAAFAAEAAAACAAMAAAAFAAIAAAADAAIAAAACAP3/AAABAAEAAAACAP7/AAACAAMAAAADAP3/AAACAAMAAAADAP7/AAACAAMAAAAEAP3/AAACAAMAAAAEAP7/AAADAAIAAAAFAP3/AAADAAIAAAAFAP7/AAADAAIAAAD+//3/AAABAAEAAAD+//7/AAABAAIAAAD///3/AAACAAEAAAD///7/AAADAAIAAAAAAP3/AAADAAIAAAAAAP7/AAADAAIAAAABAP3/AAADAAIAAAABAP7/AAADAAIAAAD+////AAADAAIAAAD+/wAAAAABAAEAAAD+/wEAAAABAAEAAAD+/wIAAAABAAIAAAD//wIAAAACAAMAAAAAAAIAAAACAAMAAAABAAIAAAADAAIAAAD9////AQAAAAAAAAD9/wAAAQAAAAAAAAD9/wEAAQAAAAAAAAD//wMAAQABAAQAAAADAAMAAQABAAQAAAAEAAMAAQABAAQAAAD///z/AQABAAAAAAAGAAAAAAADAAIAAAAGAAEAAAACAAMAAAAGAAIAAAADAAIAAAAGAP3/AAABAAEAAAAGAP7/AAADAAIAAAAGAP//AAADAAIAAAAFAAMAAQABAAQAAAD9//7/AQAAAAAAAAACAPz/AgAGAAMAAAAGAPz/AQABAAAAAAAFAPz/AQABAAAAAAAIAP7/AQAFAAAAAAAIAAEAAQAFAAAAAAAGAAMAAQABAAQAAAAHAP3/AAADAAIAAAAHAP7/AAADAAIAAAAHAP//AAADAAIAAAAHAAAAAAADAAIAAAAHAAEAAAADAAIAAAAHAAIAAAADAAIAAAAEAPr/AQAAAAUAAGAAAPr/AQAAAAUAAFABAPv/AAABAAIAAAACAPv/AAACAAIAAAADAPv/AAADAAIAAAABAPr/AAABAAIAAAACAPr/AAACAAIAAAADAPr/AAADAAIAAAABAPn/AAABAAIAAAACAPn/AAACAAIAAAADAPn/AAADAAIAAAABAPj/AAABAAIAAAACAPj/AAACAAIAAAADAPj/AAADAAIAAAD+//b/AAACAAEAAAD+//f/AAACAAIAAAD+//j/AAACAAMAAAD///b/AAADAAEAAAD///f/AAADAAIAAAD///j/AQABAAQAAAAAAPb/AAAEAAEAAAAAAPf/AAAEAAIAAAABAPX/AAACAAMAAAABAPb/AAACAAIAAAABAPf/AAACAAMAAAACAPX/AAADAAMAAAACAPb/AAADAAIAAAACAPf/AAADAAMAAAADAPX/AAAEAAMAAAADAPb/AAAEAAIAAAADAPf/AAAEAAMAAAAEAPb/AAACAAEAAAAEAPf/AAACAAIAAAAEAPj/AAACAAIAAAAFAPb/AAADAAEAAAAFAPf/AAADAAIAAAAFAPj/AQABAAQAAAAGAPb/AAAEAAEAAAAGAPf/AAAEAAIAAAAEAPP/AAACAAEAAAAEAPT/AAACAAIAAAAEAPX/AAACAAMAAAAFAPP/AAADAAEAAAAFAPT/AAADAAIAAAAFAPX/AAADAAMAAAAGAPP/AAAEAAEAAAAGAPT/AAAEAAIAAAAGAPX/AAAEAAMAAAABAPP/AAACAAEAAAABAPT/AAACAAIAAAACAPP/AAADAAEAAAACAPT/AAADAAIAAAADAPP/AAAEAAEAAAADAPT/AAAEAAIAAAD+//P/AAACAAEAAAD+//T/AAACAAIAAAD+//X/AAACAAMAAAD///P/AAADAAEAAAD///T/AAADAAIAAAD///X/AAADAAMAAAAAAPP/AAAEAAEAAAAAAPT/AAAEAAIAAAAAAPX/AAAEAAMAAAD///L/AQABAAAAAAADAPL/AQABAAAAAAAFAPL/AQABAAAAAAAHAPT/AQAFAAAAAAD9//T/AQAAAAAAAAAAAPj/AAACAAIAAAD9//b/AQAAAAAAAAAHAPb/AQAFAAAAAAA=")
+tile_set = SubResource("TileSet_0ixxm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(70, 71)
+shape = SubResource("RectangleShape2D_ssmey")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(145, -66)
+shape = SubResource("RectangleShape2D_ehiwp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-50, -86.5)
+shape = SubResource("RectangleShape2D_ehiwp")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(48.5, -221)
+shape = SubResource("RectangleShape2D_u7vh0")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-18, -88.5)
+shape = SubResource("RectangleShape2D_4yqer")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(130, -222)
+shape = SubResource("RectangleShape2D_ehiwp")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(96, -88)
+shape = SubResource("RectangleShape2D_4yqer")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(11, -120)
+shape = SubResource("RectangleShape2D_plxa0")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(69, -57)
+shape = SubResource("RectangleShape2D_plxa0")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(70, -120)
+shape = SubResource("RectangleShape2D_plxa0")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(11, -56.25)
+shape = SubResource("RectangleShape2D_plxa0")
