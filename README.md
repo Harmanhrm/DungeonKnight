@@ -1,4 +1,4 @@
-# Medieval Mayhem
+# Dungeon Knight
 
 A medieval-themed roguelike dungeon crawler inspired by Binding of Isaac, built with Godot and C#. Fight through procedurally generated dungeons, collect powerful upgrades, and defeat challenging bosses in this fast-paced combat game.
 
